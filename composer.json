@@ -1,0 +1,36 @@
+{
+    "name": "eldnp/export",
+    "type": "library",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Oleg Verevskoy",
+            "email": "verevskoy@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev",
+            "dev-develop": "0.2-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Eldnp\\Export\\": "lib/"
+        }
+    },
+    "require": {
+        "php": "^5.3"
+    },
+    "require-dev": {
+        "zendframework/zend-coding-standard": "^1.0"
+    },
+    "scripts": {
+        "check": [
+            "@cs-check"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf"
+    }
+}
